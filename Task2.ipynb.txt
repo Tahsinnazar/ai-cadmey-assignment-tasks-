@@ -1,0 +1,406 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Assignment task 2\n",
+        "Input and Type Casting."
+      ],
+      "metadata": {
+        "id": "6AOzPQQP3XtW"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1.integer to Float:"
+      ],
+      "metadata": {
+        "id": "12scmgf-3r5V"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 6371\n",
+        "y = float(x)  # y will be 6371.0"
+      ],
+      "metadata": {
+        "id": "fROl9qhK4QO6"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Taking float input:"
+      ],
+      "metadata": {
+        "id": "bl8j6kanNdpS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "height = float(input(\"Enter your height in meters: \"))"
+      ],
+      "metadata": {
+        "id": "j9K-CRd5NdyG"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Taking string input:"
+      ],
+      "metadata": {
+        "id": "2WWJXR1YNd8X"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 6371.0\n",
+        "y = int(x)  # y will be 6371"
+      ],
+      "metadata": {
+        "id": "CxKRFOAr4l0g"
+      },
+      "execution_count": 16,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "String to Integer:"
+      ],
+      "metadata": {
+        "id": "227Q0e9h7sGF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = \"2440\"\n",
+        "y = int(x)  # y will be 2440"
+      ],
+      "metadata": {
+        "id": "N2IuG_j57wBI"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "String to Float:"
+      ],
+      "metadata": {
+        "id": "XBjA8o4o795P"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = \"3.14\"\n",
+        "y = float(x)  # y will be 3.14"
+      ],
+      "metadata": {
+        "id": "TNhyjGFG8E4c"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Integer to String:"
+      ],
+      "metadata": {
+        "id": "lnTrypHd8J05"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 15759\n",
+        "y = str(x)  # y will be \"15759\""
+      ],
+      "metadata": {
+        "id": "LVR1EQhX8Q8V"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Float to String:"
+      ],
+      "metadata": {
+        "id": "OLF3jzcR8StN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 3.14\n",
+        "y = str(x)  # y will be \"3.14\""
+      ],
+      "metadata": {
+        "id": "aU_F3hKW8TBq"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Boolean to Integer:"
+      ],
+      "metadata": {
+        "id": "AfLtZ4fn8jgH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = True\n",
+        "y = int(x)  # y will be 1"
+      ],
+      "metadata": {
+        "id": "tX1YPLi88wdB"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Integer to Boolean:"
+      ],
+      "metadata": {
+        "id": "Rq16tzFV80X6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10\n",
+        "y = bool(x)  # y will be True"
+      ],
+      "metadata": {
+        "id": "p5_Nkxh485oZ"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Advanced Type Castings:\n",
+        "List to Tuple:"
+      ],
+      "metadata": {
+        "id": "2pz36JKZ9ChD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = [1, 2, 3]\n",
+        "y = tuple(x)  # y will be (1, 2, 3)"
+      ],
+      "metadata": {
+        "id": "4YOCHmnf9QaR"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tuple to List:"
+      ],
+      "metadata": {
+        "id": "DiAuy7sD9WUE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = (1, 2, 3)\n",
+        "y = list(x)  # y will be [1, 2, 3]"
+      ],
+      "metadata": {
+        "id": "fYoMyDfd9baA"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "String to List:"
+      ],
+      "metadata": {
+        "id": "yhaxlqDf9f4U"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = \"solar system\"\n",
+        "y = list(x)  # y will be ['s', 'o', 'l', 'a', 'r', ' ', 's', 'y', 's', 't', 'e']"
+      ],
+      "metadata": {
+        "id": "LYKltujo9lbI"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "List to Set:"
+      ],
+      "metadata": {
+        "id": "FaCxeZgd9uhb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = [1, 2, 3, 1, 2]\n",
+        "y = set(x)  # y will be {1, 2, 3}"
+      ],
+      "metadata": {
+        "id": "P0u-h_S-9xna"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Dictionary to List:"
+      ],
+      "metadata": {
+        "id": "aBXnUd-N925k"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = {'a': 1, 'b': 2, 'c': 3}\n",
+        "y = list(x.items())  # y will be [('a', 1), ('b', 2), ('c', 3)]"
+      ],
+      "metadata": {
+        "id": "gZeR7mh8-BD9"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Dictionary to Tuple:"
+      ],
+      "metadata": {
+        "id": "CNNPyHhl-HhZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = {'a': 1, 'b': 2, 'c': 3}\n",
+        "y = tuple(x.items())  # y will be (('a', 1), ('b', 2), ('c', 3))"
+      ],
+      "metadata": {
+        "id": "YZw4QQApInKg"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Bytes to String:"
+      ],
+      "metadata": {
+        "id": "w6mE8TkIIrVg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = b'tahseennazar'\n",
+        "y = x.decode('utf-8')  # y will be 'tahseennazar'"
+      ],
+      "metadata": {
+        "id": "IJyipAmDIwZF"
+      },
+      "execution_count": 13,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "String to Bytes:"
+      ],
+      "metadata": {
+        "id": "kEUwjfuVIvXe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 'solar system '\n",
+        "y = x.encode('utf-8')  # y will be b'solarsystem'"
+      ],
+      "metadata": {
+        "id": "qij-CA1MI6v-"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Bytes to Unicode:"
+      ],
+      "metadata": {
+        "id": "bpqLKB7FJBx5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = b'\\xce\\xa9'\n",
+        "y = x.decode('utf-8')  # y will be 'Ω'"
+      ],
+      "metadata": {
+        "id": "ImE602mkJHjP"
+      },
+      "execution_count": 1,
+      "outputs": []
+    }
+  ]
+}
